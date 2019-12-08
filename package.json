@@ -10,7 +10,8 @@
     "build": "tsc",
     "start": "node ./bin/quadra",
     "lint": "tslint -c tslint.json 'src/**/*.ts' 'tests/**/*.ts'",
-    "test": "jest --silent"
+    "test": "jest --silent",
+    "prepublishOnly": "npm run build && npm run lint && npm test"
   },
   "author": "Raul6469 <raul6469.outlook.com>",
   "repository": "https://github.com/Raul6469/quadra",

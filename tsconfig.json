@@ -1,0 +1,17 @@
+
+{
+  "include": ["src/**/*"],
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "incremental": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "pretty": true,
+    "allowJs": true,
+    "target": "es6",
+    "sourceMap": true,
+    "outDir": "./dist"
+  }
+}

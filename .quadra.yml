@@ -1,0 +1,64 @@
+boxes:
+  index:
+    files:
+      - src/index.ts
+    rules:
+      boxes:
+        only:
+          - commands
+
+  cli:
+    files:
+      - src/cli/**/*.ts
+    rules:
+      boxes:
+        only:
+          - cli
+          - types
+          - index
+
+  commands:
+    files:
+      - src/commands/**/*.ts
+    rules:
+      boxes:
+        only:
+          - files
+          - matrix
+          - types
+
+  files:
+    files:
+      - src/files/**.ts
+    rules:
+      boxes:
+        only:
+          - files
+          - types
+
+  matrix:
+    files:
+      - src/matrix/**.ts
+    rules:
+      boxes:
+        only:
+          - files
+          - parsing
+          - types
+
+  parsing:
+    files:
+      - src/parsing/**/*.ts
+    rules:
+      boxes:
+        only:
+          - parsing
+          - types
+
+  types:
+    files:
+      - src/types/**.ts
+    rules:
+      boxes:
+        only:
+          - types

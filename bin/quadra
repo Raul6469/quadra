@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+// tslint:disable-next-line: no-var-requires
+require('../dist/cli/index').loadCLI()
+  .then(process.exit)
+  .catch(e => console.error(e));

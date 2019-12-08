@@ -1,5 +1,7 @@
 # quadra
 
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FRaul6469%2Fquadra%2Fbadge&style=flat)](https://actions-badge.atrox.dev/Raul6469/quadra/goto)
+
 **Quadra is a JavaScript tool that lets you define and enforce architecture rules in your project.**
 
 You define "boxes" that represent units of code, and the dependencies between them in a YAML config file. Quadra will scan files and look at `imports` and `require`, and make sure that they follow your rules.

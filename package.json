@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "JavaScript architecture checker",
   "main": "./dist/index.js",
+  "files": [
+    "dist/"
+  ],
   "bin": {
     "quadra": "./bin/quadra"
   },

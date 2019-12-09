@@ -34,4 +34,7 @@ jobs:
       run: npm test
       
     - name: Run quadra on quadra!
-      run: npm start
+      uses: Raul6469/quadra-action@master
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        version: 0.1.2-rc.2

@@ -1,10 +1,13 @@
 {
   "name": "quadra",
-  "version": "0.1.1",
+  "version": "0.1.2-rc.1",
   "description": "JavaScript architecture checker",
   "main": "./dist/index.js",
   "files": [
-    "dist/"
+    "dist/",
+    "bin/",
+    "README.md",
+    "LICENSE"
   ],
   "bin": {
     "quadra": "./bin/quadra"
@@ -20,6 +23,7 @@
   "repository": "https://github.com/Raul6469/quadra",
   "homepage": "https://github.com/Raul6469/quadra",
   "bugs": "https://github.com/Raul6469/quadra/issues",
+  "license": "MIT",
   "dependencies": {
     "@babel/parser": "7.7.4",
     "@babel/traverse": "7.7.4",

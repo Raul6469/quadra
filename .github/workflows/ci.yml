@@ -3,6 +3,17 @@ name: CI
 on: [push, pull_request]
 
 jobs:
+  quadra:
+    name: 'quadra'
+    runs-on: [ubuntu-latest]
+    
+    steps:
+      - name: Run quadra on quadra!
+        uses: Raul6469/quadra-action@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: 0.1.2-rc.2
+     
   test:
     name: 'Test'
 
@@ -32,9 +43,3 @@ jobs:
       
     - name: Test
       run: npm test
-      
-    - name: Run quadra on quadra!
-      uses: Raul6469/quadra-action@master
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        version: 0.1.2-rc.2
